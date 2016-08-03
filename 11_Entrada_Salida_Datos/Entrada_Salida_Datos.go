@@ -3,7 +3,7 @@ import(
 	"fmt"
 	"bufio"
 	"os"	
-);
+); 
 
 func main(){
 	edad:=22;
@@ -29,10 +29,11 @@ func main(){
 	fmt.Printf("Sueldo: %.2f \n", sueldo);
 
 	//Otra forma de leer datos
-	reader:= bufio.newReader(os.Stdin);
+	//Se crea un reader
+	reader:= bufio.NewReader(os.Stdin);// se le dice el lector que tiene que usar
 	fmt.Println("Ingresa tu nombre :");
-	nombre,err= reader.ReadString('\n');
-	if err==nil{
+	nombre,err:= reader.ReadString('\n');//hasta que no encuentre un salto de linea sigue leyendo
+	if err!=nil{
 		fmt.Println(err);
 	}else{
 		fmt.Println("Hola"+nombre);
