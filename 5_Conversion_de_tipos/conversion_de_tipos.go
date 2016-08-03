@@ -14,7 +14,6 @@ func main(){
 	cantidad:="50";
 	cantidad_int,_:=strconv.Atoi(cantidad);
 	//La función Atoi retorna multiiple valores
-	//Se usa el _ para recibir un valor que no se va usar
-
+	//Se usa el _ para recibir un valor que no se va usar 
 	fmt.Println(cantidad_int +10);
 }
