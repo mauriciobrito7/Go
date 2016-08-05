@@ -23,6 +23,5 @@ func main(){
 			twoD[i][j] = i + j;
 		}
 	}
-
 	fmt.Println("2D:",twoD);
 }
