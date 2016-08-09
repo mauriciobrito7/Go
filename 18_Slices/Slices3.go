@@ -21,14 +21,14 @@ func main() {
 
 	//Asignamos un espacio en blanco en el indice 5 del slice x
 	//A pesar que se tiene una capacidad de 10 no se puede acceder más alla
-	//de la longitud declarada para es existe la función append
+	//de la longitud declarada para eso existe la función append
 	//x[5] = ' ' esto es un  error
 	//Se le pasa el slice a modificar y lo que se le va agregar
 	//La función append devuelve el mismo slice si tiene la suficiente longitud para agregar
 	//O devuelve un nuevo slice si no lo tiene por eso es que se escribe asi
 	x = append(x, ' ')
 	fmt.Println(x)
-	//Aqui podemos notar que la capicidad a cambiado de 10 a 8 porque es un nuev slice
+	//Aqui podemos notar que la capicidad a cambiado de 10 a 8 porque es un nuevo slice
 	//Dado que no tenia sufciente longitud genera una capacidad del doble de la longitud anterior
 	fmt.Println(cap(x))
 
