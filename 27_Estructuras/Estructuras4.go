@@ -44,7 +44,7 @@ func main() {
 	//Comparando estructuras
 	a := Punto{5, 6}
 	b := Punto{7, 4}
-	/*Para que dos estructuras se true cuando se esten comparando cada uno
+	/*Para que dos estructuras sean true cuando se esten comparando cada uno
 	de sus respectivos campos deben ser iguales */
 	fmt.Println("a==b:", a == b)
 	c := Punto{7, 4}
