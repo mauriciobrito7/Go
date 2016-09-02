@@ -18,7 +18,7 @@ type Punto3D struct {
 	*Punto3D
 }
 
-//Se pueden declar estructuras sin campos
+//Se pueden declarar estructuras sin campos
 /*Por lo general cuando se declara una estructura sin campos es porque
 se le van a agregar métodos que van a ser utilizados desde esa estructura*/
 //OpPunto tiene los métodos para realizar operaciones con puntos
